@@ -1,6 +1,6 @@
-# CTM - C Template with Make
+# ann - An Implementation of ANN 
 
-A personal C project template that uses [Make](https://www.gnu.org/software/make/).
+An Implementation of ANN for educational purpose.
 
 ## Dependencies
 - None
@@ -8,8 +8,8 @@ A personal C project template that uses [Make](https://www.gnu.org/software/make
 ## Build
 
 ``` sh
-git clone https://github.com/cygishere/ctm.git
-cd ctm/bin
+git clone https://github.com/cygishere/ann.git
+cd ann/bin
 make
 ```
 

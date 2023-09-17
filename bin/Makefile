@@ -1,5 +1,5 @@
 .POSIX:
-CC = cc
+CC := cc
 CFLAGS := -Wall -Wextra -std=c11 -pedantic
 CFLAGS += -g3 -DDEBUG
 LIBS := -fsanitize=address
