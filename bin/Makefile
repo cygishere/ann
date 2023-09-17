@@ -9,10 +9,16 @@ SRC := ../src
 .PHONY: all
 all: run
 
-main.out: main.o
+main.out: main.o fact.o ann.o
 	$(CC) $(LIBS) -o $@ $^
 
-main.o: $(SRC)/main.c
+main.o: $(SRC)/main.c $(SRC)/ann.h
+	$(CC) $(CFLAGS) -c $<
+
+fact.o: $(SRC)/fact.c $(SRC)/fact.h
+	$(CC) $(CFLAGS) -c $<
+
+ann.o: $(SRC)/ann.c $(SRC)/ann.h
 	$(CC) $(CFLAGS) -c $<
 
 .PHONY: run
